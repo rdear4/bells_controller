@@ -1,0 +1,108 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <title>Test Server</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/play.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet"> -->
+
+   
+</head>
+
+<body>
+    <div id="main-content">
+
+        <div id="nav-menu" class="flex-col">
+
+            <a href="#">
+                <div class="nav-menu-item flex-row active" panel-index="0">
+                    <span>Play</span>
+                </div>
+            </a>
+            <a href="/songs.html">
+                <div class="nav-menu-item flex-row" panel-index="1">
+                    <span>Songs</span>
+                </div>
+            </a>
+            <a href="/mapping.html">
+                <div class="nav-menu-item flex-row" panel-index="2">
+                    <span>Port Mapping</span>
+                </div>
+            </a>
+            
+        </div>
+        <div id="panel-wrapper" class="flex-col">
+
+            <div class="panel-section flex-col">
+                <div class="panel-section-header">
+                    <span>Songs</span>
+                </div>
+                <div class="panel-section-content flex-row">
+                    <select id="song-list">
+                        <option value = "-1">Select a song...</option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="panel-section flex-col">
+                <div class="panel-section-header">
+                    <span>Playback controls</span>
+                </div>
+                <div class="panel-section-content">
+                    <div id="playback-controls-wrapper" class="flex-row">
+                        <div class="control-wrapper flex-col">
+                            <div class="control-wrapper-label flex-row">
+                                <span>Tempo</span>
+                            </div>
+                            <div class="control-wrapper-content flex-col flex-col">
+                                <div class="control-button flex-row">
+                                    <span id="inc-tempo-btn">⏶</span>
+                                </div>
+                                <div id="tempo-display-wrapper" class="">
+                                    <span id="tempo">1.00x</span>
+                                </div>
+                                <div class="control-button flex-row">
+                                    <span id="dec-tempo-btn">⏷</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="control-wrapper flex-col">
+                            <div class="control-wrapper-label flex-row">
+                                <span>Play / Pause</span>
+                            </div>
+                            <div class="control-wrapper-content flex-col">
+                                <div class="control-button flex-row">
+                                    <span id="play-pause-btn" class="">⏵</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-wrapper flex-col">
+                            <div class="control-wrapper-label flex-row">
+                                <span>Stop</span>
+                            </div>
+                            <div class="control-wrapper-content flex-col">
+                                <div class="control-button flex-row">
+                                    <span id="stop-btn" class="disabled">⏹</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</body>
+
+<script src="jquery.js"></script>
+<script src="songsData.js"></script>
+<script src="/index.js"></script>
+
+</html>

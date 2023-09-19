@@ -1,0 +1,9 @@
+{
+    "ssid": "",
+    "AP_PASSWORD": "wifi1234",
+    "aio_username": "my_adafruit_io_username",
+    "password": "",
+    "AP_SSID": "DEV_AP",
+    "errorMessage": "",
+    "timezone": "America/New_York"
+}
